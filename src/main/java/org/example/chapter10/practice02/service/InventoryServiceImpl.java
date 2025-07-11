@@ -48,7 +48,7 @@ public class InventoryServiceImpl implements InventoryService {
     public void deleteItem(String itemId) {
         Item item = repository.findById(itemId);
 
-        if (item.getId() != null) {
+        if (item != null) {
             repository.removeItem(itemId);
         } else {
             throw new NoSuchElementException("Item not found whit ID: " + itemId);

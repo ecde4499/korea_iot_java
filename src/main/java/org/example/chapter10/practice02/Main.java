@@ -64,16 +64,16 @@ public class Main {
                         addItem(inventoryService, sc);
                         break;
                     case 2:
-                        updateItemPrice(inventoryService, sc);
-                        break;
-                    case 3:
-                        deleteItem(inventoryService, sc);
-                        break;
-                    case 4:
-                        viewItemsByCategory(inventoryService, sc);
-                    case 5:
                         viewAllItems(inventoryService, sc);
                         break;
+                    case 3:
+                        updateItemPrice(inventoryService, sc);
+                        break;
+                    case 4:
+                        deleteItem(inventoryService, sc);
+                        break;
+                    case 5:
+                        viewItemsByCategory(inventoryService, sc);
                     case 0:
                         System.out.println("=== 종료합니다 ===");
                         sc.close();
