@@ -21,13 +21,21 @@ package org.example.chapter12;
  */
 
 import org.example.chapter12.controller.BookController;
+import org.example.chapter12.model.Book;
 import org.example.chapter12.view.BookView;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class LibraryManagement {
     public static void main(String[] args) {
-        BookController controller = new BookController();
+        // 테스트용 더미 도서 리스트를 생성
+        List<Book> dummyBooks = new ArrayList<>();
+        dummyBooks.add(new Book("자바자바자바", "이승아", "코리아"));
+        dummyBooks.add(new Book("자바를 잡아", "이도경", "나이스"));
+
+        BookController controller = new BookController(dummyBooks);
         Scanner sc = new Scanner(System.in);
 
         // 의존성 주입

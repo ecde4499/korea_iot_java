@@ -10,7 +10,7 @@ package org.example.chapter12.model;
     @Method
     : 각 필드의 getter & toString 재정의
 
-    @Constuctor
+    @Constructor
     : 각 필드를 초기화
  */
 
@@ -22,7 +22,7 @@ public class Book {
     public Book(String title, String author, String publisher) {
         this.title = title;
         this.author = author;
-        this.publisher =publisher;
+        this.publisher = publisher;
     }
 
     public String getTitle() { return title; }
