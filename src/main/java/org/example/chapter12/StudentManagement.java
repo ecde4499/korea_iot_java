@@ -31,8 +31,27 @@ package org.example.chapter12;
     4) DTO(StudentRequestDto 요청, StudentResponseDto 응답)
  */
 
+import org.example.chapter12.controller.StudentController;
+import org.example.chapter12.model.Student;
+import org.example.chapter12.view.StudentView;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class StudentManagement {
     public static void main(String[] args) {
+        List<Student> dummyStudents = new ArrayList<>();
+        dummyStudents.add(new Student(1,"이승아",25,"1111"));
+        dummyStudents.add(new Student(2,"이도경",29,"2222"));
+        dummyStudents.add(new Student(3,"조승범",26,"3333"));
+        dummyStudents.add(new Student(4,"김병진",28,"4444"));
+
+        StudentController controller = new StudentController(dummyStudents);
+        Scanner sc = new Scanner(System.in);
+
+        StudentView view = new StudentView(sc, controller);
+        view.showMenu();
 
     }
 }
