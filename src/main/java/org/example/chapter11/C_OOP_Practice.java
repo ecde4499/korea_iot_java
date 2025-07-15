@@ -85,7 +85,7 @@ public class C_OOP_Practice {
         OrderService orderService = new OrderService(creditCard, generateReport);
         OrderService orderService1 = new OrderService(samsumPay, generateReport);
 
-        // 여러 개의 줌누 객체 생성
+        // 여러 개의 주문 객체 생성
         Order order1 = new Order("1",18000);
         Order order2 = new Order("2",28000);
         Order order3 = new Order("3",13000);
