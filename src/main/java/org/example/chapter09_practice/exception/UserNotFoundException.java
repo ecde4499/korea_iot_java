@@ -1,4 +1,4 @@
-package org.example.chapter09_prectice.exception;
+package org.example.chapter09_practice.exception;
 
 // 사용자 예외 클래스
 public class UserNotFoundException extends RuntimeException {

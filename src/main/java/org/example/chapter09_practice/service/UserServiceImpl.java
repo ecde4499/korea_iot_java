@@ -1,7 +1,7 @@
-package org.example.chapter09_prectice.service;
+package org.example.chapter09_practice.service;
 
-import org.example.chapter09_prectice.exception.UserNotFoundException;
-import org.example.chapter09_prectice.model.User;
+import org.example.chapter09_practice.exception.UserNotFoundException;
+import org.example.chapter09_practice.model.User;
 
 import java.util.ArrayList;
 import java.util.List;

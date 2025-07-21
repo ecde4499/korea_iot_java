@@ -1,4 +1,4 @@
-package org.example.chapter09_prectice.util;
+package org.example.chapter09_practice.util;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

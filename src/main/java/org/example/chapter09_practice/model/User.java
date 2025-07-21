@@ -1,6 +1,6 @@
-package org.example.chapter09_prectice.model;
+package org.example.chapter09_practice.model;
 
-import org.example.chapter09_prectice.util.DateUtil;
+import org.example.chapter09_practice.util.DateUtil;
 
 public class User {
     private int id;

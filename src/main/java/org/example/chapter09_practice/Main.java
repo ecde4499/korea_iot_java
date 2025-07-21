@@ -1,4 +1,4 @@
-package org.example.chapter09_prectice;
+package org.example.chapter09_practice;
 
 /*
     == 사용자(User) 관리 시스템 구현 ==
@@ -41,10 +41,10 @@ package org.example.chapter09_prectice;
 // EX) 학생 등록하기, 학생 정보 가져오기, 학생 삭제하기 등을 처리
 //      => model을 가지고 일을 하는 곳
 
-import org.example.chapter09_prectice.exception.UserNotFoundException;
-import org.example.chapter09_prectice.model.User;
-import org.example.chapter09_prectice.service.UserService;
-import org.example.chapter09_prectice.service.UserServiceImpl;
+import org.example.chapter09_practice.exception.UserNotFoundException;
+import org.example.chapter09_practice.model.User;
+import org.example.chapter09_practice.service.UserService;
+import org.example.chapter09_practice.service.UserServiceImpl;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package org.example.chapter09_prectice.service;
+package org.example.chapter09_practice.service;
 
-import org.example.chapter09_prectice.model.User;
+import org.example.chapter09_practice.model.User;
 
 import java.util.List;
 
