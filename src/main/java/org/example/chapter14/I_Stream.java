@@ -8,15 +8,15 @@ import java.util.stream.Stream;
 public class I_Stream {
     public static void main(String[] args) {
 
-        // Array.asList
-        // : 일반 배열을 ArrayList로 변환
+        // Arrays.asList
+        // : 일반 배열을 ArrayList로 반환
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 
         List<Integer> newNumbers = numbers.stream()
                 .map(n -> n * n)
                 .collect(Collectors.toList()); // 최종 연산 - 변경 가능한 리스트를 반환 (mutable list) / Java 8 이상
 
-        numbers.add(10);
+        newNumbers.add(10);
 
         // cf) .stream()으로 생성된 스트림은 일회성으로만 사용 가능
         // - 메서드 체이닝으로 여러 기능 적용은 가능
