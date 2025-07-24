@@ -4,7 +4,7 @@ import org.example.user_reservation.dto.ReservationResponseDto;
 import org.example.user_reservation.entity.Reservation;
 import org.example.user_reservation.entity.User;
 import org.example.user_reservation.repository.ReservationRepository;
-import org.example.user_reservation.repository.UserRepository;
+
 import org.example.user_reservation.service.ReservationService;
 import org.example.user_reservation.service.UserService;
 
