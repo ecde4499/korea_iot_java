@@ -1,15 +1,21 @@
 package org.example.quiz;
 
+import lombok.Getter;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+class Example {
+    public static int parseNumber(String str) {
+        if (!str.matches("\\d+")) {
+            throw new NumberFormatException("잘못된 숫자 형식: " + str);
+        }
+        return Integer.parseInt(str);
+    }
+}
 
 
 public class test {
 //    요구사항:
 //
-//    Student라는 클래스를 작성합니다.
+//    Student 라는 클래스를 작성합니다.
 //
 //    name (이름, 문자열 타입)과 score (점수, 정수 타입) 필드를 가집니다.
 //    Student 객체를 생성할 때 이름과 점수를 초기화할 수 있는 생성자를 만듭니다.
@@ -23,4 +29,12 @@ public class test {
     }
 }
 
+@Getter
+class Order {
+    private String item;
+    private int quantity;
+    private int pricePerUnit;
+
+    // 생성자, getter, toString()
+}
 
